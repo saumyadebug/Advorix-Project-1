@@ -1,0 +1,105 @@
+.section {
+    padding: 8rem 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.section-header {
+    margin-bottom: 6rem;
+    max-width: 800px;
+}
+
+.section-header h2 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    line-height: 0.9;
+    word-wrap: break-word;
+}
+
+.section-header p {
+    font-size: 1.5rem;
+    color: var(--color-text-muted);
+    font-family: 'DM Mono', monospace;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--color-border);
+    border-left: 1px solid var(--color-border);
+}
+
+.feature-card {
+    padding: 4rem 2rem;
+    border-right: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    transition: background 0.3s;
+    background: transparent;
+    border-radius: 0;
+}
+
+.feature-card:hover {
+    background: var(--color-primary);
+    color: #000;
+}
+
+.feature-card:hover h3,
+.feature-card:hover p,
+.feature-card:hover .icon-box {
+    color: #000;
+    border-color: #000;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border-radius: 0;
+    /* Square */
+}
+
+.feature-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.feature-card p {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta {
+    background: var(--color-surface);
+    text-align: center;
+    padding: 10rem 0;
+}
+
+.cta h2 {
+    font-size: clamp(2.5rem, 6vw, 6rem);
+    line-height: 0.9;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.cta p {
+    font-size: 1.25rem;
+    margin-bottom: 4rem;
+    color: var(--color-text-muted);
+    font-family: 'DM Mono', monospace;
+}
+
+@media (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}

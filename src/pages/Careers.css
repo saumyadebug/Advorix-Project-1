@@ -1,0 +1,125 @@
+.careers-hero {
+    padding: 180px 0 100px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.careers-hero h1 {
+    font-size: clamp(2.5rem, 6.5vw, 6rem);
+    text-transform: uppercase;
+    line-height: 0.9;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.careers-hero .highlight {
+    color: var(--color-primary);
+    font-style: italic;
+}
+
+.culture {
+    padding: 8rem 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.culture-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border: 1px solid var(--color-border);
+}
+
+.culture-item {
+    padding: 4rem 2rem;
+    border-right: 1px solid var(--color-border);
+    text-align: left;
+}
+
+.culture-item:last-child {
+    border-right: none;
+}
+
+.culture-item h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.culture-item svg {
+    color: var(--color-primary);
+    width: 48px;
+    height: 48px;
+}
+
+/* Jobs List - Brutalist Table style */
+.jobs-list {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid var(--color-text);
+    margin-top: 4rem;
+}
+
+.job-card {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--color-border);
+    background: transparent;
+    border-radius: 0;
+    transition: background 0.3s;
+}
+
+.job-card:hover {
+    background: var(--color-surface);
+    padding-left: 2rem;
+    /* Indent effect */
+}
+
+.job-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+
+.job-meta {
+    display: flex;
+    gap: 2rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+}
+
+.job-type {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    padding: 0.2rem 0.5rem;
+    background: transparent;
+    border-radius: 0;
+}
+
+.job-card .btn-outline {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .culture-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .culture-item {
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .job-card {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .job-meta {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
