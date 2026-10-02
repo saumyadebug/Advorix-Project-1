@@ -9,7 +9,7 @@ const Hero = () => {
 
                 <div className="hero-top">
                     <div className="hero-badge">
-                        <span>/// Est. 2026 // Advorix Tech</span>
+                        <span>EST. 2026 — ADVORIX TECH</span>
                     </div>
                     <h1>
                         <span className="line line-1">Digital</span>
